@@ -13,9 +13,9 @@ class Livro{
         return `Título da obra: ${this.titulo} \n
         Autor: ${this.autor} \n
         Editora: ${this.editora} \n
-        Gênero: ${this.genero}
-        ISBM: ${this.isbm}
-        Ano de publicação: ${this.idade}
+        Gênero: ${this.genero} \n
+        ISBM: ${this.isbm} \n
+        Ano de publicação: ${this.idade} \n
         Idioma: ${this.idioma}`
     }
 }

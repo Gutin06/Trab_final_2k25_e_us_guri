@@ -1,7 +1,10 @@
-function cadastro(){
-    let bot = document.querySelector('.botao');
-    bot.addEventListener('click', () =>{
+let listaLivros = [];
 
-    })
+
+
+document.querySelector('botao').addEventListener('click', cadastro);
+
+
+function cadastro(){
+alert('a')
 }
-cadastro();
