@@ -15,7 +15,7 @@ class Livro{
         Editora: ${this.editora} \n
         Gênero: ${this.genero} \n
         ISBM: ${this.isbm} \n
-        Ano de publicação: ${this.idade} \n
+        Ano de publicação: ${this.ano} \n
         Idioma: ${this.idioma}`
     }
 }
@@ -30,5 +30,8 @@ class Editora{
         return `Nome: ${this.nome} \n
         CNPJ: ${this.cnpj} \n
         Cidade: ${this.cidade}`
+    }
+    toString(){
+        return `${this.nome}`
     }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     
@@ -13,20 +13,23 @@
             <h2>Cadastro de Livros</h2>
         </div>
     </div>
-    
+    <form>
     Título ><input type="text" class="txtTitulo"> <br>
     Autor ><input type="text" class="txtAutor"> <br>
-    Editora ><input type="text" class="txtEditora"> <br>
+    Editora ><select class="txtEditora"> </select> <br>
     Gênero ><input type="text" class="txtGenero"> <br>
-    ISBM ><input type="text" class="txtIsbm"> <br>
+    ISBN ><input type="text" class="txtIsbn"> <br>
     Ano de publicação ><input type="text" class="txtAno"> <br>
     Idioma ><input type="text" class="txtIdioma"> <br>
 
 
-<button class="botao">Cadastrar Livro</button>
+<button class="botao" type="submit">Cadastrar Livro</button>
+    </form>
 
 
-
+<div class="livros">
+    <ul id="livrosAdd"></ul>
+</div>
 
 
 
