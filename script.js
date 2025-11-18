@@ -6,17 +6,19 @@ let ed2 = new Editora('Antiga', 2, 'Xique-Xique BA');
 let ed3 = new Editora('Atual', 3, 'Guaratingueta NL');
 let ed4 = new Editora('Futuristica', 4, 'Vanini RS');
 
+if(listaEditoras.length ===0){
 listaEditoras.push(ed1,ed2,ed3,ed4)
-
+localStorage.setItem('lista-editoras', JSON.stringify(listaEditoras));
+}
 let flamengo = document.querySelector('.txtEditora');
 
 for (let i = 0; i < listaEditoras.length; i++) {
     let opcao = document.createElement('option')
     opcao.value = i;
-    opcao.innerText = listaEditoras[i]
+    opcao.innerText = listaEditoras[i].nome
      flamengo.appendChild(opcao)
 }
-localStorage.setItem('lista-editoras', JSON.stringify(listaEditoras));
+
 
 document.querySelector('.botao').addEventListener('click', cadastro);
 
@@ -36,6 +38,7 @@ function cadastro(evento) {
 
     let novoLivro = new Livro(titulo, autor, editora, genero, isbn, ano, idioma);
     listaLivros.push(novoLivro)
+    localStorage.setItem('lista-livros', JSON.stringify(listaLivros))
 
     mostrarLivro()
     document.querySelector('form').reset();
@@ -68,10 +71,11 @@ function mostrarLivro() {
             }
             mostrarLivro()
             localStorage.setItem('lista-livros', JSON.stringify(listaLivros))
+
             
         });
         novoLi.appendChild(botRemover);
         ulDosLivros.appendChild(novoLi);
-        localStorage.setItem('lista-livros', JSON.stringify(listaLivros))
+        
     }
 }
