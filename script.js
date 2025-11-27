@@ -1,9 +1,6 @@
 let listaLivros = JSON.parse(localStorage.getItem('lista-livros')) || [];
 let listaEditoras = JSON.parse(localStorage.getItem('lista-editoras')) || [];
 
-/*let listaEditoras = JSON.parse(localStorage.getItem('lista-editoras')) || [];
-let listaLivros = JSON.parse(localStorage.getItem('lista-livros')) || [];
-
 listaEditoras = listaEditoras.map(e => new Editora(e.nome, e.cnpj, e.cidade));
 
 listaLivros = listaLivros.map(l => new Livro(
@@ -14,7 +11,7 @@ listaLivros = listaLivros.map(l => new Livro(
     l.isbm,
     l.ano,
     l.idioma
-));*/
+));
 
 let ed1 = new Editora('Moderna', 1, 'Sorocaba SP');
 let ed2 = new Editora('Antiga', 2, 'Xique-Xique BA');
