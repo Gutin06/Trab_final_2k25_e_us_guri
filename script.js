@@ -69,9 +69,8 @@ function mostrarLivro() {
             } else {
                 alert('Certo, livro não removido!');
             }
-            mostrarLivro()
             localStorage.setItem('lista-livros', JSON.stringify(listaLivros))
-
+            mostrarLivro()
             
         });
         novoLi.appendChild(botRemover);
